@@ -6,7 +6,6 @@ import {
   Group,
   Image,
   PasswordInput,
-  SimpleGrid,
   Stack,
   TextInput,
 } from "@mantine/core";

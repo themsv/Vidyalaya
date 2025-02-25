@@ -9,7 +9,9 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "fix": "npm run lint -- --fix ",
-    "format": "npx prettier . --write"
+    "format": "npx prettier . --write",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@mantine/core": "^7.16.3",
@@ -40,6 +42,7 @@
     "eslint-plugin-prettier": "^5.2.3",
     "eslint-plugin-react-hooks": "^5.0.0",
     "eslint-plugin-react-refresh": "^0.4.18",
+    "gh-pages": "^6.3.0",
     "globals": "^15.14.0",
     "postcss": "^8.5.2",
     "postcss-preset-mantine": "^1.17.0",
