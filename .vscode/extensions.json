@@ -1,0 +1,16 @@
+{
+  "recommendations": [
+    // ESLint/Prettier formatter
+    "esbenp.prettier-vscode",
+    // ESLint support to VSCode
+    "dbaeumer.vscode-eslint",
+    //Auto Rename Tage
+    "formulahendry.auto-rename-tag",
+    //TODO highlighter
+    "wayou.vscode-todo-highlight",
+    //Spell check
+    "streetsidesoftware.code-spell-checker",
+    //SonarLint
+    "sonarsource.sonarlint-vscode"
+  ]
+}
