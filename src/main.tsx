@@ -1,16 +1,14 @@
 import { StrictMode } from "react";
-
-import { createRoot } from "react-dom/client";
-
-import App from "./App.tsx";
+import ReactDOM from "react-dom/client";
 import RootProvider from "./providers/RootProvider";
 
-import "./index.css";
-
-createRoot(document.getElementById("root")!).render(
-  <StrictMode>
-    <RootProvider>
-      <App />
-    </RootProvider>
-  </StrictMode>,
-);
+// Render the app
+const rootElement = document.getElementById("root")!;
+if (!rootElement.innerHTML) {
+  const root = ReactDOM.createRoot(rootElement);
+  root.render(
+    <StrictMode>
+      <RootProvider />
+    </StrictMode>,
+  );
+}
